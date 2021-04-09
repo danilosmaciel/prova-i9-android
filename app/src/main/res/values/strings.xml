@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjetoAcacia</string>
+    <string name="conteudo">Conteudo</string>
+    <string name="titulo">Titulo</string>
+    <string name="remover_nota">Remover Nota</string>
+    <string name="digita_a_senha">Digita a senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="digite_o_usuario">Digite o usuario</string>
+    <string name="login">Login</string>
+    <string name="remover">Remover</string>
+</resources>
