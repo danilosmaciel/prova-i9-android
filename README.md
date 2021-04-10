@@ -3,6 +3,7 @@ Projeto para a prova i9
 
 ## Para testar o projeto
 Nenhuma configuração é necessária, somente compilar e executar o projeto.
+O projeto é escrito em Java e a api de dados utilizada é a fornecida pela Acácia(https://prova-i9.herokuapp.com/).
 
 ## Funcionamento do projeto
 1 - Necessário estar conctado a internet.
