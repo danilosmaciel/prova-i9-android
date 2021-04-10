@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel;
 
 import br.com.mac.projetoacacia.model.Usuario;
 import br.com.mac.projetoacacia.repository.LoginRepository;
+import br.com.mac.projetoacacia.utils.Utils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -23,7 +24,7 @@ public class LoginViewmodel extends ViewModel {
                     final Usuario userRet = response.body();
                     callbackLogin.returned(true,"", userRet);
                 }
-                callbackLogin.returned(false,response.message(), null);
+                callbackLogin.returned(false,Utils.getErrorMessage(response.code()), null);
             }
 
             @Override
@@ -40,7 +41,7 @@ public class LoginViewmodel extends ViewModel {
                 if(response.isSuccessful()){
                     callbackLogin.returned(true,"Usuario Registrado com sucesso! Tente Fazer Login!");
                 }
-                callbackLogin.returned(false,response.message());
+                callbackLogin.returned(false, Utils.getErrorMessage(response.code()));
             }
 
             @Override

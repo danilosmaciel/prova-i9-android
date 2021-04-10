@@ -26,4 +26,23 @@ public class Utils {
     public static void showToast(final Context context, final String msg) {
         Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
     }
+
+    public static String getErrorMessage(int code) {
+        String msg = "";
+        switch (code){
+            case 401:
+                msg = "Usuário não cadastrado ou dados incorretos!";
+                break;
+            case 422:
+                msg = "Usuário já cadastrado!";
+                break;
+            case 442:
+                msg = "Usuário já cadastrado!";
+                break;
+            default:
+                break;
+        }
+
+        return msg;
+    }
 }
