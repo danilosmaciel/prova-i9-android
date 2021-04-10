@@ -2,7 +2,7 @@
 Projeto para a prova i9
 
 ## Para testar o projeto
-Nenhuma configuração é necessário, somente compilar e executar o projeto.
+Nenhuma configuração é necessária, somente compilar e executar o projeto.
 
 ## Funcionamento do projeto
 1 - Necessário estar conctado a internet.
