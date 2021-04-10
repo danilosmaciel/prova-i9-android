@@ -2,6 +2,8 @@ package br.com.mac.projetoacacia.repository;
 
 import android.content.Context;
 
+import java.util.Calendar;
+
 import br.com.mac.projetoacacia.model.Usuario;
 import br.com.mac.projetoacacia.retrofit.ProjetoRetrofit;
 import br.com.mac.projetoacacia.retrofit.service.UsuarioService;
@@ -20,7 +22,7 @@ public class LoginRepository {
     }
 
     public Call<Usuario> registerUser(final Usuario user) {
-        return service.register(new Usuario(user.getUsername(),user.getUsername()+"@gmail.com",user.getPassword()));
+        return service.register(new Usuario(user.getUsername(), Calendar.getInstance().getTimeInMillis() +"@gmail.com",user.getPassword()));
     }
 
 }

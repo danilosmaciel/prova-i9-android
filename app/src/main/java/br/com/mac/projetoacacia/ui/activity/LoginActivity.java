@@ -76,7 +76,14 @@ public class LoginActivity extends AppCompatActivity {
     private void registerUser(final Usuario user, final Button button, final ProgressBar progressBar) {
         progressBar.setVisibility(View.VISIBLE);
         _viewModel.registerUser(user, (sucess, message) -> {
-            Utils.showToast(LoginActivity.this, message);
+            if(sucess){
+                Utils.showToast(LoginActivity.this, message);
+            }else{
+                if(!message.equals("")){
+                    Utils.showToast(LoginActivity.this, message);
+                }
+            }
+
             progressBar.setVisibility(View.GONE);
             button.setEnabled(true);
             return sucess;
@@ -92,8 +99,9 @@ public class LoginActivity extends AppCompatActivity {
                 intent.putExtra("token", userRet.getId());
                 startActivity(intent);
             }else{
-                String msg = _viewModel.getMessage(message);
-                Utils.showToast(LoginActivity.this, msg);
+                if(!message.equals("")){
+                    Utils.showToast(LoginActivity.this, message);
+                }
             }
             progressBar.setVisibility(View.GONE);
             button.setEnabled(true);
