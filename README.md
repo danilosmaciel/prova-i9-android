@@ -11,7 +11,7 @@ Nenhuma configuração é necessária, somente compilar e executar o projeto.
 
 3 - Com o mesmo usuário e senha, agora cadastrados, clique em Login.
 
-4 - Na tela seguinte é exibido uma lista de notas, porém se for o primeiro acesso, a mesma deverá estar vazia. As ações nesta tela são de listagem, adição, edição e exclusão de notas.
+4 - Na tela seguinte será exibida uma lista de notas, porém se for o primeiro acesso, a mesma deverá estar vazia. As ações nesta tela são de listagem, adição, edição e exclusão de notas.
 
 ## Como adicionar uma nova nota
  Clique no botão + no canto inferior direito para exibir a poupup de cadastro.
